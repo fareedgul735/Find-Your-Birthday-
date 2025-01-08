@@ -20,15 +20,12 @@ function findDay() {
   let result = document.getElementById("result");
 
   if (!!day && !!month && !!year) {
+    result.style.color = "blue";
     result.innerHTML = `Your birthday on ${moment(`${day}-${month}-${year}`, [
       "dd-mm-yyyy",
     ]).format("dddd-mm-yyyy")}`;
   } else {
-    result.innerHTML = "Please Filled All Fields !";
+    result.style.color = "red";
+    result.innerHTML = "Please field all the fields !";
   }
 }
-
-// document.getElementById("input_1").user.getMonth();
-// document.getElementById("input_2").user.getFullYears();
-
-// document.getElementById("b-tn");

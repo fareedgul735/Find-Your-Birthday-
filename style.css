@@ -39,7 +39,7 @@
   background-color: rgb(0, 255, 0);
   border: none;
   width: 200px;
-  height: 40px;
+  height: 35px;
   border-radius: 5px;
   font-style: italic;
   color: #fff;
@@ -53,6 +53,11 @@
 span {
   font-weight: 500;
   font-style: italic;
+}
+
+#result {
+  font-style: italic;
+  margin-top: 15px;
 }
 
 @media (min-width: 280px) and (max-width: 490px) {
